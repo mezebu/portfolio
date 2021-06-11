@@ -40,7 +40,7 @@ function App() {
       <Router>
         <div className={classes.background}>
           <div className="App">
-            <Container maxWidth="lg">
+            <Container>
               <Header />
 
               <Switch>

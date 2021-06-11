@@ -58,9 +58,9 @@ body {
 }
 
 .aboutme-right-col {
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,10 +81,6 @@ body {
 .abt-btn,
 .abt-icon {
   padding: 0.5rem;
-}
-
-.icon {
-  color: black;
 }
 
 .home {

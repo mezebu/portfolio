@@ -36,7 +36,7 @@ const ProjectCards = () => {
           avatar="C"
           title="Calculator"
           imgSrc={calculator}
-          description="Score card app is a list of football scores built using react "
+          description="A basic javaScript calculator "
           pageUrl="https://mezebu.github.io/calculator/"
           codeUrl="https://github.com/Mezebu/calculator"
         />

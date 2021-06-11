@@ -1,11 +1,11 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import { AiFillGithub } from "react-icons/ai";
 import pic from "../assets/hpic.jpg";
 
 const HomePage = () => {
   return (
-    <Container maxWidth="lg">
+    <Container>
       <div
         style={{ textAlign: "center" }}
         className="text animate__animated animate__slideInDown"
@@ -21,13 +21,13 @@ const HomePage = () => {
           <Typography
             variant="h5"
             style={{ fontWeight: "700", textAlign: "center" }}
-            className="animate__animated animate__bounceInLeft"
+            className="animate__animated animate__bounceInLeft animate__delay-0.5s"
           >
             Hi, I'm Ezeigwe Henry
           </Typography>
           <Typography
             style={{ textAlign: "center" }}
-            className="animate__animated animate__bounceInRight"
+            className="animate__animated animate__bounceInRight animate__delay-1s"
             gutterBottom
           >
             Frontend Developer
@@ -35,7 +35,7 @@ const HomePage = () => {
           <Typography className="abt-text" gutterBottom>
             Creative frontend developer with year's experience web development.
             I am fueled by my passion in understanding programming languages,
-            operating systems, front-end frameworks and databases.
+            front-end frameworks and databases.
           </Typography>
           <Typography className="abt-text" gutterBottom>
             I consider myself a ‘forever student,’ eager to both build on my
@@ -66,7 +66,7 @@ const HomePage = () => {
               target="_blank"
               rel="noreferrer noopener"
             >
-              <GitHubIcon fontSize="medium" className="icon" />
+              <AiFillGithub size="2em" color="black" />
             </a>
           </div>
         </div>

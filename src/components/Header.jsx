@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
       flexGrow: 1,
     },
     color: "black",
+    fontWeight: "700",
   },
   toolbar: {
     padding: 0,
@@ -65,7 +66,7 @@ const Header = (props) => {
         <Toolbar className={classes.toolbar}>
           <div className={classes.headerOptions}>
             <Typography variant="h6" className={classes.title}>
-              Portfolio
+              Henry
             </Typography>
             <div>
               {isMobile ? (

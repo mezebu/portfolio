@@ -1,6 +1,16 @@
 import React from "react";
 import { Container, Grid, Card, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import {
+  SiMaterialUi,
+  BsFillBootstrapFill,
+  FaGitSquare,
+  AiFillHtml5,
+  DiCss3,
+  IoLogoJavascript,
+  FaReact,
+  DiJqueryLogo,
+} from "react-icons/all";
 
 const useStyles = makeStyles({
   root: {
@@ -34,71 +44,77 @@ const useStyles = makeStyles({
 const AboutPage = () => {
   const classes = useStyles();
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="md">
       <div className={classes.root}>
         <Typography variant="h4" gutterBottom>
           SKILLS
         </Typography>
         <Grid container spacing={2}>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s skills">
+          <Grid item xs={6} sm={6} md={3}>
+            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
               <Card className={classes.card}>
-                <div style={{ fontSize: "5em" }}>
-                  <i class="fab fa-html5"></i>
-                </div>
+                <AiFillHtml5 size="4em" />
                 <Typography variant="h6">Html</Typography>
               </Card>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
+          <Grid item xs={6} sm={6} md={3}>
             <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
               <Card className={classes.card}>
-                <span style={{ fontSize: "5em" }}>
-                  <i class="fab fa-css3-alt"></i>
-                </span>
+                <DiCss3 size="4em" />
                 <Typography variant="h6">CSS</Typography>
               </Card>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
+          <Grid item xs={6} sm={6} md={3}>
             <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
               <Card className={classes.card}>
-                <span style={{ fontSize: "5em" }}>
-                  {" "}
-                  <i class="fab fa-js-square"></i>
-                </span>
+                <IoLogoJavascript size="4em" />
                 <Typography variant="h6">javaScript</Typography>
               </Card>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+          <Grid item xs={6} sm={6} md={3}>
+            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
               <Card className={classes.card}>
-                <span style={{ fontSize: "4em" }}>
-                  <i class="fab fa-react"></i>
-                  <Typography variant="h6">React</Typography>
-                </span>
+                <FaReact size="4em" />
+                <Typography variant="h6">React</Typography>
               </Card>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
+          <Grid item xs={6} sm={6} md={3}>
             <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
-                <span style={{ fontSize: "4em" }}>
-                  <i class="bi bi-bootstrap"></i>
-                </span>
+                <BsFillBootstrapFill size="4em" />
+
                 <Typography variant="h6">Bootstrap</Typography>
               </Card>
             </div>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
+          <Grid item xs={6} sm={6} md={3}>
             <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
-                <span style={{ fontSize: "5em" }}>
-                  {" "}
-                  <i class="fab fa-git-square"></i>
-                </span>
-                <Typography variant="h7">Version Control(Git)</Typography>
+                <FaGitSquare size="4em" />
+
+                <Typography variant="h6">Version Control(Git)</Typography>
+              </Card>
+            </div>
+          </Grid>
+          <Grid item xs={6} sm={6} md={3}>
+            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+              <Card className={classes.card}>
+                <SiMaterialUi size="4em" />
+
+                <Typography variant="h6">Material UI</Typography>
+              </Card>
+            </div>
+          </Grid>
+          <Grid item xs={6} sm={6} md={3}>
+            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+              <Card className={classes.card}>
+                <DiJqueryLogo size="4em" />
+
+                <Typography variant="h6">jQuery</Typography>
               </Card>
             </div>
           </Grid>
