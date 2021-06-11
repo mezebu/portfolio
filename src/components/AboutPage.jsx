@@ -72,7 +72,7 @@ const AboutPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
                 <span style={{ fontSize: "4em" }}>
                   <i class="fab fa-react"></i>
@@ -82,7 +82,7 @@ const AboutPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
                 <span style={{ fontSize: "4em" }}>
                   <i class="bi bi-bootstrap"></i>
@@ -92,7 +92,7 @@ const AboutPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
                 <span style={{ fontSize: "5em" }}>
                   {" "}
