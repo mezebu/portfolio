@@ -21,11 +21,15 @@ const HomePage = () => {
           <Typography
             variant="h5"
             style={{ fontWeight: "700", textAlign: "center" }}
+            className="animate__animated animate__bounceInLeft"
           >
             Hi, I'm Ezeigwe Henry
           </Typography>
-          <Typography style={{ textAlign: "center" }} gutterBottom>
-            {" "}
+          <Typography
+            style={{ textAlign: "center" }}
+            className="animate__animated animate__bounceInRight"
+            gutterBottom
+          >
             Frontend Developer
           </Typography>
           <Typography className="abt-text" gutterBottom>
