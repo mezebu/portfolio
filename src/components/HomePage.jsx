@@ -29,9 +29,9 @@ const HomePage = () => {
             Frontend Developer
           </Typography>
           <Typography className="abt-text" gutterBottom>
-            Creative frontend developer with experience in web development. I am
-            fueled by my passion in understanding networks, operating systems,
-            systems software and hardware and communications databases.
+            Creative frontend developer with year's experience web development.
+            I am fueled by my passion in understanding programming languages,
+            operating systems, front-end frameworks and databases.
           </Typography>
           <Typography className="abt-text" gutterBottom>
             I consider myself a ‘forever student,’ eager to both build on my

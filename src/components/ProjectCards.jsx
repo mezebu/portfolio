@@ -46,7 +46,7 @@ const ProjectCards = () => {
           avatar="T"
           title="Todo-List"
           imgSrc={todo}
-          description="Score card app is a list of football scores built using react "
+          description="Displays, adds, removes and marks tasks as complete."
           pageUrl="https://todo-list-b03b4.web.app/"
           codeUrl="https://github.com/Mezebu/todo-list"
         />
@@ -56,7 +56,7 @@ const ProjectCards = () => {
           avatar="L"
           title="Landify"
           imgSrc={landify}
-          description="Score card app is a list of football scores built using react "
+          description="Landing page  built using react "
           pageUrl="https://landify-1e603.web.app/"
           codeUrl="https://github.com/Mezebu/landify"
         />
