@@ -122,7 +122,7 @@ const ContactPage = () => {
           <Grid item xs={6} sm={6} md={4}>
             <div className="animate__animated animate__fadeInUp animate__delay-1s">
               <Card className={classes.card}>
-                <a a href={telegram} rel={rel} target={target}>
+                <a href={telegram} rel={rel} target={target}>
                   <TelegramIcon
                     className={classes.icons}
                     style={{ color: blue[500] }}

@@ -8,13 +8,15 @@ import {
 import { Container } from "@material-ui/core";
 import "normalize-css";
 import "animate.css";
+import {
+  Header,
+  HomePage,
+  AboutPage,
+  ContactPage,
+  ProjectCards,
+} from "./components";
 
-import Header from "./components/Header.jsx";
-import HomePage from "./components/HomePage";
-import AboutPage from "./components/AboutPage.jsx";
-import ContactPage from "./components/ContactPage.jsx";
-import ProjectCards from "./components/ProjectCards.jsx";
-import "./App.css";
+import styles from "./App.module.css";
 
 const useStyles = makeStyles({
   root: {
@@ -39,7 +41,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <div className={classes.background}>
-          <div className="App">
+          <div className={styles.App}>
             <Container>
               <Header />
 

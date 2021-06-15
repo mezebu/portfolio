@@ -1,43 +1,21 @@
 import React, { useState } from "react";
-import { makeStyles, useTheme } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import IconButton from "@material-ui/core/IconButton";
+import { useTheme } from "@material-ui/core/styles";
 import MenuIcon from "@material-ui/icons/Menu";
-import MenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
 import { withRouter } from "react-router-dom";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import { Button } from "@material-ui/core";
+import {
+  Button,
+  IconButton,
+  Toolbar,
+  MenuItem,
+  Menu,
+  AppBar,
+  Typography,
+} from "@material-ui/core";
+import "animate.css";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
-  title: {
-    [theme.breakpoints.down("sm")]: {
-      flexGrow: 1,
-    },
-    color: "black",
-    fontWeight: "700",
-  },
-  toolbar: {
-    padding: 0,
-  },
-  headerOptions: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    flex: 1,
-  },
-  headerLinks: {
-    color: "inherit",
-  },
-}));
+import useStyles from "./styles";
+
 const Header = (props) => {
   const classes = useStyles();
   const theme = useTheme();
@@ -65,9 +43,10 @@ const Header = (props) => {
       <AppBar position="relative" color="transparent" elevation={0}>
         <Toolbar className={classes.toolbar}>
           <div className={classes.headerOptions}>
-            <Typography variant="h6" className={classes.title}>
-              Henry
+            <Typography variant="h5" className={classes.title}>
+              <div className="animate__animated animate__flipInX">Ezeigwe</div>
             </Typography>
+
             <div>
               {isMobile ? (
                 <>

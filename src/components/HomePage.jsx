@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
 import { AiFillGithub } from "react-icons/ai";
+
+import styles from "../../src/App.module.css";
 import pic from "../assets/hpic.jpg";
 
 const HomePage = () => {
@@ -16,7 +18,7 @@ const HomePage = () => {
           style={{ height: "200px", borderRadius: "100px" }}
         />
       </div>
-      <Grid className="aboutme-right-col" col={8}>
+      <Grid className={styles.aboutme} col={8}>
         <div>
           <Typography
             variant="h5"
@@ -32,24 +34,24 @@ const HomePage = () => {
           >
             Frontend Developer
           </Typography>
-          <Typography className="abt-text" gutterBottom>
+          <Typography className={styles.abouttxt} gutterBottom>
             Creative frontend developer with year's experience web development.
             I am fueled by my passion in understanding programming languages,
             front-end frameworks and databases.
           </Typography>
-          <Typography className="abt-text" gutterBottom>
+          <Typography className={styles.abouttxt} gutterBottom>
             I consider myself a ‘forever student,’ eager to both build on my
             academic foundations in Web development by staying in tune with the
             latest technologies through continued coursework and professional
             development.
           </Typography>
-          <Typography className="abt-text">
+          <Typography className={styles.abouttxt}>
             My hunger for knowledge and determination to turn information into
             action has contributed to my success.
           </Typography>
         </div>
-        <div className="icons">
-          <div className="abt-btn">
+        <div className={styles.icons}>
+          <div className={styles.aboutbtn}>
             <Button
               color="primary"
               variant="contained"
@@ -60,7 +62,7 @@ const HomePage = () => {
               Resume
             </Button>
           </div>
-          <div className="abt-icon">
+          <div className={styles.abouticon}>
             <a
               href="https://github.com/Mezebu"
               target="_blank"

@@ -6,11 +6,21 @@ import landify from "../assets/landify.png";
 import weather from "../assets/weather.png";
 import calculator from "../assets/Calculator.png";
 import todo from "../assets/todo.png";
-import scoreCard from "../assets/scoreCard.png";
+import covid from "../assets/covid.png";
 
 const ProjectCards = () => {
   return (
     <Grid container spacing={1} maxWidth="md">
+      <Grid item xs={12} sm={6} md={4}>
+        <TaskCard
+          avatar="C"
+          title="Covid Tracker"
+          imgSrc={covid}
+          description="Covid-19 cases in countries around the world."
+          codeUrl="https://github.com/Mezebu/corona-tracker"
+          pageUrl="https://corona-tracker-ab94b.web.app/"
+        />
+      </Grid>
       <Grid item xs={12} sm={6} md={4}>
         <TaskCard
           avatar="W"
@@ -59,17 +69,6 @@ const ProjectCards = () => {
           description="Landing page  built using react "
           pageUrl="https://landify-1e603.web.app/"
           codeUrl="https://github.com/Mezebu/landify"
-        />
-      </Grid>
-
-      <Grid item xs={12} sm={6} md={4}>
-        <TaskCard
-          avatar="S"
-          title="Scored Card"
-          imgSrc={scoreCard}
-          description="Score card is a list of football scores built using react."
-          codeUrl="https://codesandbox.io/s/festive-nobel-gjt1p"
-          pageUrl="https://gjt1p.csb.app/"
         />
       </Grid>
     </Grid>

@@ -47,17 +47,7 @@ body {
   color: black;
 }
 
-.home-page {
-  display: flex;
-  align-items: center;
-}
-
-.responsive {
-  width: 100%;
-  height: 400px;
-}
-
-.aboutme-right-col {
+.aboutme {
   box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 2rem;
   margin-bottom: 5px;
@@ -67,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.abt-text {
+.abouttxt {
   text-align: start;
 }
 
@@ -78,20 +68,7 @@ body {
   margin-top: 1rem;
 }
 
-.abt-btn,
-.abt-icon {
+.aboutbtn,
+.abouticon {
   padding: 0.5rem;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.text {
-  margin: 10px 0;
-  font-weight: 700;
-  font-size: 70px;
 }
