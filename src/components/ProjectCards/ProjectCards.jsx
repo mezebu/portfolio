@@ -1,12 +1,14 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import TaskCard from "./TaskCard";
-import GamersImage from "../assets/Gamers.png";
-import landify from "../assets/landify.png";
-import weather from "../assets/weather.png";
-import calculator from "../assets/Calculator.png";
-import todo from "../assets/todo.png";
-import covid from "../assets/covid.png";
+import TaskCard from "../TaskCard/TaskCard";
+import {
+  GamersImage,
+  landify,
+  covid,
+  weather,
+  calculator,
+  todo,
+} from "../../assets";
 
 const ProjectCards = () => {
   return (

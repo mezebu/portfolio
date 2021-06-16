@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Grid, Card, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
 import WhatsAppIcon from "@material-ui/icons/WhatsApp";
 import MailIcon from "@material-ui/icons/Mail";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -9,36 +8,11 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import TelegramIcon from "@material-ui/icons/Telegram";
 import { green, blue } from "@material-ui/core/colors";
 
-const useStyles = makeStyles({
-  root: {
-    display: "flex",
-    alignItems: "center",
-    flexDirection: "column",
-    paddingTop: 50,
-  },
-  card: {
-    background: "rgba(255, 255, 255, 0.20)",
-    "&:hover": {
-      background: "rgba(255, 255, 255, 0)",
-    },
-    boxShadow:
-      "0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2)",
-    backdropFilter: "blur(2px)",
-    webkitBackdropFilter: "blur(2px)",
-    borderRadius: 3,
-    border: "1px solid rgba(255, 255, 255, 0.1)",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: 150,
-  },
-  icons: {
-    fontSize: 100,
-  },
-});
+import useStyles from "./styles";
 
-const ContactPage = () => {
+const Contact = () => {
   const classes = useStyles();
+
   const urlItems = {
     tel: "tel:+234-903-8233-089",
     mail: "mailto:mezebu07@gmail.com",
@@ -48,9 +22,22 @@ const ContactPage = () => {
     telegram: "https://t.me/Mezebu",
     target: "_blank",
     rel: "noreferrer noopener",
+    fadeDownAnimate:
+      "animate__animated animate__fadeInDown animate__delay-0.5s",
+    fadeUpAnimate: "animate__animated animate__fadeInUp animate__delay-1s",
   };
-  const { tel, mail, whatsApp, twitter, linkedIn, telegram, target, rel } =
-    urlItems;
+  const {
+    tel,
+    mail,
+    whatsApp,
+    twitter,
+    linkedIn,
+    telegram,
+    target,
+    rel,
+    fadeDownAnimate,
+    fadeUpAnimate,
+  } = urlItems;
   return (
     <Container maxWidth="sm">
       <div className={classes.root}>
@@ -59,7 +46,7 @@ const ContactPage = () => {
         </Typography>
         <Grid container spacing={2}>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className={fadeDownAnimate}>
               <Card className={classes.card}>
                 <a href={tel} target={target} rel={rel}>
                   <PhoneIcon
@@ -71,7 +58,7 @@ const ContactPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className={fadeDownAnimate}>
               <Card className={classes.card}>
                 <a href={mail} rel={rel} target={target}>
                   <MailIcon
@@ -84,7 +71,7 @@ const ContactPage = () => {
           </Grid>
 
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
+            <div className={fadeDownAnimate}>
               <Card className={classes.card}>
                 <a href={whatsApp} rel={rel} target={target}>
                   <WhatsAppIcon
@@ -96,7 +83,7 @@ const ContactPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+            <div className={fadeUpAnimate}>
               <Card className={classes.card}>
                 <a href={twitter} rel={rel} target={target}>
                   <TwitterIcon
@@ -108,7 +95,7 @@ const ContactPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+            <div className={fadeUpAnimate}>
               <Card className={classes.card}>
                 <a href={linkedIn} rel={rel} target={target}>
                   <LinkedInIcon
@@ -120,7 +107,7 @@ const ContactPage = () => {
             </div>
           </Grid>
           <Grid item xs={6} sm={6} md={4}>
-            <div className="animate__animated animate__fadeInUp animate__delay-1s">
+            <div className={fadeUpAnimate}>
               <Card className={classes.card}>
                 <a href={telegram} rel={rel} target={target}>
                   <TelegramIcon
@@ -137,4 +124,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;

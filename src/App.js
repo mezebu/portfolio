@@ -8,13 +8,7 @@ import {
 import { Container } from "@material-ui/core";
 import "normalize-css";
 import "animate.css";
-import {
-  Header,
-  HomePage,
-  AboutPage,
-  ContactPage,
-  ProjectCards,
-} from "./components";
+import { Header, Home, Skills, Contact, ProjectCards } from "./components";
 
 import styles from "./App.module.css";
 
@@ -46,10 +40,10 @@ function App() {
               <Header />
 
               <Switch>
-                <Route path="/" exact component={HomePage} />
-                <Route path="/about" exact component={AboutPage} />
+                <Route path="/" exact component={Home} />
+                <Route path="/about" exact component={Skills} />
                 <Route path="/projects" exact component={ProjectCards} />
-                <Route path="/contact" exact component={ContactPage} />
+                <Route path="/contact" exact component={Contact} />
               </Switch>
             </Container>
           </div>

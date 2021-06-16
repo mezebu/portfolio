@@ -1,5 +1,5 @@
-export { default as Header } from "./Header";
-export { default as HomePage } from "./HomePage";
-export { default as AboutPage } from "./AboutPage";
-export { default as ContactPage } from "./ContactPage";
-export { default as ProjectCards } from "./ProjectCards";
+export { default as Header } from "./Header/Header";
+export { default as Home } from "./Home/Home";
+export { default as Skills } from "./Skills/Skills";
+export { default as Contact } from "./Contact/Contact";
+export { default as ProjectCards } from "./ProjectCards/ProjectCards";

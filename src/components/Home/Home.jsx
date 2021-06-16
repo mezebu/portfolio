@@ -2,10 +2,10 @@ import React from "react";
 import { Container, Typography, Grid, Button } from "@material-ui/core";
 import { AiFillGithub } from "react-icons/ai";
 
-import styles from "../../src/App.module.css";
-import pic from "../assets/hpic.jpg";
+import styles from "../../../src/App.module.css";
+import pic from "../../assets/hpic.jpg";
 
-const HomePage = () => {
+const Home = () => {
   return (
     <Container>
       <div
@@ -77,4 +77,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Home;
