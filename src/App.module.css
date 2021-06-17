@@ -26,21 +26,23 @@ html {
 }
 
 body {
+  background: -webkit-linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fcb045,
+    #fd1d1d,
+    #833ab4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background: url("./assets/3D_Bkg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: -webkit-linear-gradient(
-    to right,
-    #ffdde1,
-    #ee9ca7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background-color: linear-gradient(
-    to right,
-    #ffdde1,
-    #ee9ca7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .App {
