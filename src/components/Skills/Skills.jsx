@@ -15,8 +15,8 @@ const Skills = () => {
           SKILLS
         </Typography>
         <Grid container spacing={2}>
-          {skillDown.map(({ title, icon }) => (
-            <Grid item xs={6} sm={6} md={3} key={title}>
+          {skillDown.map(({ title, icon, id }) => (
+            <Grid item xs={6} sm={6} md={3} key={id}>
               <div className="animate__animated animate__fadeInDown animate__delay-0.5s">
                 <Card className={classes.card}>
                   {icon}
@@ -26,8 +26,8 @@ const Skills = () => {
             </Grid>
           ))}
 
-          {skillUp.map(({ title, icon }) => (
-            <Grid item xs={6} sm={6} md={3} key={title}>
+          {skillUp.map(({ title, icon, id }) => (
+            <Grid item xs={6} sm={6} md={3} key={id}>
               <div className="animate__animated animate__fadeInUp animate__delay-1s">
                 <Card className={classes.card}>
                   {icon}

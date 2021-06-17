@@ -36,7 +36,7 @@ export const Projects = [
     avatar: "C",
     title: "Calculator",
     imgSrc: calculator,
-    description: "A basic javaScript calculator ",
+    description: "A simple javaScript calculator ",
     pageUrl: "https://mezebu.github.io/calculator/",
     codeUrl: "https://github.com/Mezebu/calculator",
   },
