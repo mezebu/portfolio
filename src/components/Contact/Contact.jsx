@@ -39,88 +39,91 @@ const Contact = () => {
     fadeUpAnimate,
   } = urlItems;
   return (
-    <Container maxWidth="sm">
-      <div className={classes.root}>
-        <Typography variant="h4" gutterBottom>
-          Contacts
-        </Typography>
-        <Grid container spacing={2}>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeDownAnimate}>
-              <Card className={classes.card}>
-                <a href={tel} target={target} rel={rel}>
-                  <PhoneIcon
-                    className={classes.icons}
-                    style={{ color: green[800] }}
-                  />
-                </a>
-              </Card>
-            </div>
-          </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeDownAnimate}>
-              <Card className={classes.card}>
-                <a href={mail} rel={rel} target={target}>
-                  <MailIcon
-                    className={classes.icons}
-                    style={{ color: blue[800] }}
-                  />
-                </a>
-              </Card>
-            </div>
-          </Grid>
+    <>
+      <Typography variant="h4" align="center" gutterBottom>
+        Contacts
+      </Typography>
+      <div className={classes.text} />
+      <Container maxWidth="sm">
+        <div className={classes.root}>
+          <Grid container spacing={2}>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeDownAnimate}>
+                <Card className={classes.card}>
+                  <a href={tel} target={target} rel={rel}>
+                    <PhoneIcon
+                      className={classes.icons}
+                      style={{ color: green[800] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeDownAnimate}>
+                <Card className={classes.card}>
+                  <a href={mail} rel={rel} target={target}>
+                    <MailIcon
+                      className={classes.icons}
+                      style={{ color: blue[800] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
 
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeDownAnimate}>
-              <Card className={classes.card}>
-                <a href={whatsApp} rel={rel} target={target}>
-                  <WhatsAppIcon
-                    className={classes.icons}
-                    style={{ color: green[600] }}
-                  />
-                </a>
-              </Card>
-            </div>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeDownAnimate}>
+                <Card className={classes.card}>
+                  <a href={whatsApp} rel={rel} target={target}>
+                    <WhatsAppIcon
+                      className={classes.icons}
+                      style={{ color: green[600] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeUpAnimate}>
+                <Card className={classes.card}>
+                  <a href={twitter} rel={rel} target={target}>
+                    <TwitterIcon
+                      className={classes.icons}
+                      style={{ color: blue[600] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeUpAnimate}>
+                <Card className={classes.card}>
+                  <a href={linkedIn} rel={rel} target={target}>
+                    <LinkedInIcon
+                      className={classes.icons}
+                      style={{ color: blue[800] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
+            <Grid item xs={6} sm={6} md={4}>
+              <div className={fadeUpAnimate}>
+                <Card className={classes.card}>
+                  <a href={telegram} rel={rel} target={target}>
+                    <TelegramIcon
+                      className={classes.icons}
+                      style={{ color: blue[500] }}
+                    />
+                  </a>
+                </Card>
+              </div>
+            </Grid>
           </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeUpAnimate}>
-              <Card className={classes.card}>
-                <a href={twitter} rel={rel} target={target}>
-                  <TwitterIcon
-                    className={classes.icons}
-                    style={{ color: blue[600] }}
-                  />
-                </a>
-              </Card>
-            </div>
-          </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeUpAnimate}>
-              <Card className={classes.card}>
-                <a href={linkedIn} rel={rel} target={target}>
-                  <LinkedInIcon
-                    className={classes.icons}
-                    style={{ color: blue[800] }}
-                  />
-                </a>
-              </Card>
-            </div>
-          </Grid>
-          <Grid item xs={6} sm={6} md={4}>
-            <div className={fadeUpAnimate}>
-              <Card className={classes.card}>
-                <a href={telegram} rel={rel} target={target}>
-                  <TelegramIcon
-                    className={classes.icons}
-                    style={{ color: blue[500] }}
-                  />
-                </a>
-              </Card>
-            </div>
-          </Grid>
-        </Grid>
-      </div>
-    </Container>
+        </div>
+      </Container>
+    </>
   );
 };
 
