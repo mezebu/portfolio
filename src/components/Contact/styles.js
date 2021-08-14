@@ -26,9 +26,4 @@ export default makeStyles({
   icons: {
     fontSize: 100,
   },
-  text: {
-    borderBottom: "3px solid red",
-    width: "10rem",
-    margin: "0 auto",
-  },
 });

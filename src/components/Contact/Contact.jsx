@@ -43,7 +43,6 @@ const Contact = () => {
       <Typography variant="h4" align="center" gutterBottom>
         Contacts
       </Typography>
-      <div className={classes.text} />
       <Container maxWidth="sm">
         <div className={classes.root}>
           <Grid container spacing={2}>
