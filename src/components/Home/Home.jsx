@@ -35,9 +35,9 @@ const Home = () => {
             Frontend Developer
           </Typography>
           <Typography className={styles.abouttxt} gutterBottom>
-            Creative frontend developer with year's experience web development.
-            I am fueled by my passion in understanding programming languages,
-            front-end frameworks and databases.
+            Creative frontend developer with year's experience in web
+            development. I am fueled by my passion in understanding programming
+            languages, front-end frameworks and databases.
           </Typography>
           <Typography className={styles.abouttxt} gutterBottom>
             I consider myself a ‘forever student,’ eager to both build on my
