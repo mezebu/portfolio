@@ -5,6 +5,7 @@ import {
   weather,
   calculator,
   todo,
+  scores,
 } from "../../assets";
 
 export const Projects = [
@@ -31,6 +32,14 @@ export const Projects = [
     description: "A web app that handles sign in and registration sessions.",
     codeUrl: "https://github.com/Mezebu/gamers",
     pageUrl: "https://gamers-fb7da.firebaseapp.com/",
+  },
+  {
+    avatar: "S",
+    title: "Score Card",
+    imgSrc: scores,
+    description: "List of premier league games and scores.",
+    pageUrl: "https://score-card-app.web.app/",
+    codeUrl: "https://github.com/Mezebu/score-card-app",
   },
   {
     avatar: "C",
