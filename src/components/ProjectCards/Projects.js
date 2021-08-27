@@ -6,6 +6,7 @@ import {
   calculator,
   todo,
   scores,
+  recipe,
 } from "../../assets";
 
 export const Projects = [
@@ -26,12 +27,12 @@ export const Projects = [
     codeUrl: "https://github.com/Mezebu/weather-app",
   },
   {
-    avatar: "G",
-    title: "Gamers",
-    imgSrc: GamersImage,
-    description: "A web app that handles sign in and registration sessions.",
-    codeUrl: "https://github.com/Mezebu/gamers",
-    pageUrl: "https://gamers-fb7da.firebaseapp.com/",
+    avatar: "R",
+    title: "Recipe App",
+    imgSrc: recipe,
+    description: "The app grabs recipes from an external API",
+    pageUrl: "https://recipe-app-46d04.web.app/",
+    codeUrl: "https://github.com/Mezebu/recipe-app",
   },
   {
     avatar: "S",
@@ -40,6 +41,14 @@ export const Projects = [
     description: "List of premier league games and scores.",
     pageUrl: "https://score-card-app.web.app/",
     codeUrl: "https://github.com/Mezebu/score-card-app",
+  },
+  {
+    avatar: "G",
+    title: "Gamers",
+    imgSrc: GamersImage,
+    description: "A web app that handles sign in and registration sessions.",
+    codeUrl: "https://github.com/Mezebu/gamers",
+    pageUrl: "https://gamers-fb7da.firebaseapp.com/",
   },
   {
     avatar: "C",
