@@ -1,15 +1,7 @@
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import {
-  Avatar,
-  CardMedia,
-  Typography,
-  CardActions,
-  CardContent,
-  CardHeader,
-  Card,
-  Button,
-} from "@material-ui/core";
+// prettier-ignore
+import { Avatar, CardMedia, Typography, CardActions, CardContent, CardHeader, Card, Button,} from "@material-ui/core";
 
 import useStyles from "./styles";
 
