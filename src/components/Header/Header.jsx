@@ -22,7 +22,7 @@ const Header = (props) => {
   const { history } = props;
   const [anchorEl, setAnchorEl] = useState(null);
 
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   const open = Boolean(anchorEl);
 
   const handleMenu = (event) => {
